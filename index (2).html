@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> <!--this is for the icons that we will use later-->
+  <link rel="stylesheet" href="/main.css">  <!--link to you your own css file-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <title>Southend-on-Sea</title> <!-- rename your location-->
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <a href="/homepage.html" class="text-white"> <!--creates a hyperlink back to the homepage. once the pages are combined, change this to /index.html which should be the homepage-->
+            <img class="logo" src="LOGO.png" alt="Brit City Scores" height="120" target="_blank" data-toggle="tooltip" title="Back to Homepage" >
+            </a>
+        </div>
+        <div>
+            <button class="sign-in-button" target="_blank" data-toggle="tooltip" title="Sign into your profile">Sign In</button>
+            </a>
+        </div>
+    </header>
+
+    
+    <div class="title-box">
+        <h1>SOUTHEND-ON-SEA</h1> <!--change name of your location-->
+    </div>
+    <img src="Headerlandscape.jpg" alt="Southend Landscape" class="headimage"> <!--change to your image file location-->
+        
+    <div class="info-section">
+        <div class="history-box">
+            <h2>History and Highlights</h2>
+            <p>Short description and history of your chosen location.....</p>
+        </div>
+        <div class="quick-links-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#things-to-do">Things to Do</a></li>
+                <li><a href="#places-to-eat">Places to Eat</a></li>
+                <li><a href="#get-here">How to Get Here</a></li>
+            </ul>
+        </div>
+    </div>
+   
+    
+    <div class="section-title-box" id="things-to-do">  <!--the id important to ensure the "Quick Links work"-->
+        <h2><span class="material-icons">theater_comedy</span> Things to Do </h2>
+    </div>
+    
+
+        <div class="row border-row mb-4">
+            <div class="col-md-3 img-container">
+                <img src="AdventureIsland.jpeg" alt="Adventure Island" class="img-fluid" width="100%"> <!--change to your image file location-->
+            </div>
+            <div class="col-md-9">
+                <h3>Adventure Island</h3>
+                <p>Description of Adventure Island<span id="dots1">...</span><span id="more1"> Add more description about this location. </span></p>
+                <button onclick="myFunction1()" id="myBtn1">Read more</button></p>
+            </div>
+            <script src="southend.js"></script>   <!--link to you your own javascript file-->
+        </div>
+
+        <div class="row border-row mb-4">
+            <div class="col-md-9">
+                <h3 >Southend Pier</h3>
+                <p>Description of Southend Pier<span id="dots2">...</span><span id="more2"> Add more description about this location. </span></p>
+                <button onclick="myFunction2()" id="myBtn2">Read more</button></p>
+            </div>
+            <script src="southend.js"></script>
+            <div class="col-md-3 img-container">
+                <img src="southend pier.jpg" alt="Southend Pier" class="img-fluid" width="100%">
+            </div>
+        </div>
+        
+        <div class="row border-row mb-4">
+            <div class="col-md-3 img-container">
+                <img src="CliffsPavilion.jpg" alt="Cliffs Pavilion" class="img-fluid" width="100%">
+            </div>
+            <div class="col-md-9">
+                <h3>Cliffs Pavilion</h3>
+                <p>Description of Cliffs Pavilion<span id="dots3">...</span><span id="more3"> Add more description about this location. </span></p>
+                <button onclick="myFunction3()" id="myBtn3">Read more</button></p></p>
+            </div>
+        </div>
+
+    
+    <div class="section-title-box" id="places-to-eat"> 
+        <h2><span class="material-icons">restaurant_menu</span>  Places to Eat </h2>
+    </div>
+    
+
+    <div class="places-to-eat-box">
+        <div class="row">
+            <div class="col-md-4 text-center rounded">
+                <div class="restaurant">
+                    <a href="https://www.roslinhotel.com/roslin-dining" target="_blank" data-toggle="tooltip" title="This restaurant serves a delicious Afternoon Tea. Click here to make a booking">
+                        <img src="roslinfood.jpeg" alt="Roslin Tea" width=100%>  <!--change to your image file location and external weblink-->
+                    </a>
+                    <h3>Roslin Beach Hotel Restaurant</h3>
+                    <p>Rating: ★★★★★</p>
+                    <p> Cost: £££ </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="restaurant">
+                    <a href="https://thepeterboat.co.uk" target="_blank" data-toggle="tooltip" title=" British gastro pub and locally caught seafood at it's finest. Click here to make a booking">
+                    <img src="peterboatfood.jpeg" alt="Peterboat" width=90%>  <!--change to your image file location and external weblink-->
+                    </a>
+                    <h3>The Peterboat</h3>
+                     <p>Rating: ★★★★</p>
+                     <p>Cost: ££</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center rounded">
+                <div class="restaurant">
+                    <a href="https://pearldragon.co.uk" target="_blank"data-toggle="tooltip" title="Luxury Chinese food with Dim Sum as its signature. Click here to make a booking" >
+                    <img src="PearlDragonfood.jpeg" alt="PearlDragon" width=90%>  <!--change to your image file location and external weblink-->
+                    </a>
+                    <h3>Pearl Dragon</h3>
+                    <p>Rating: ★★★★★</p>
+                    <p>Cost: £££ </p>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                    $('[data-toggle="tooltip"]').tooltip();
+                })
+            </script>
+        </div>
+    </div>
+
+    
+    <div class="section-title-box" id="get-here">  <!--Using Bootstrap accordion-->
+        <h2>How to Get Here</h2>
+    </div>
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-weight:600; font-size:25px">
+                By Road
+                </button>
+            </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Southend-on-Sea is accessible via the A13 or A127. Both are linked to the M25. </div>
+                </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="font-weight:600; font-size:25px">
+                  By Train
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">You can get both the C2C train to Southend Central Station from London Fenchurch Street Station or Greater Anglia train to Southend Victoria Station from Liverpool Street Station.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="font-weight:600; font-size:25px">
+                  By Air
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">London Southend Airport is only 10 mins away from the town centre. London Stansted and London City Airports are 40mins drive away.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    
+    
+    
+<footer class="footer">
+   <p>  © Copyright WebDev Group 6 | Code First Girls 2024 | </p> 
+</footer>
+
+
+
+</body>
+
+</html>
+
+
+
+
+  
